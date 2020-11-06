@@ -1,0 +1,1 @@
+// content.js will have all our javascript functions that control dom events in index.html
