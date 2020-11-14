@@ -119,13 +119,20 @@
 
 						<div class="row">
 							<div class="col-md-3">
-								<button class="btn btn-primary myBtns submitBtn" type="submit">
+								<button onClick="findGamers()" class="btn btn-primary myBtns submitBtn" type="submit">
 									Find Gamers
 								</button>
 							</div>
 							<div class="col-md-9">
 							</div>
 						</div>
+
+						<!-- This div gets filled with content after "Find Gamers" is clicked -->
+						<div id="searchResultsContent"></div>
+
+						<!-- This div gets filled with alerts after sending a friend request -->
+						<div id="alertContent"></div>
+
 					</div>
 				</div>
 			</div>

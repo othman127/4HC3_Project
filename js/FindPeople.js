@@ -1,5 +1,7 @@
 moreSettingsBtn = document.getElementById("moreSettingsBtn");
 moreSettingsContent = document.getElementById("moreSettingsContent");
+searchResultsContent = document.getElementById("searchResultsContent");
+alertContent = document.getElementById("alertContent");
 moreSettingsOpen = false;
 moreSettingsHTML = `<div class="row">
 							<div class="col-md-4">
@@ -138,6 +140,31 @@ addGamesTabContent = `<div class="row">
 						</hr>
 						</div>`;
 
+searchResultsHTML = `
+<h3>Search Results</h3>
+<table class="table table-light">
+						  <thead>
+						    <tr>
+						      <th scope="col">Name</th>
+						      <th scope="col">Age</th>
+						      <th scope="col">School</th>
+						      <th scope="col">Program</th>
+						      <th scope="col">Location</th>
+						      <th scope="col">Games</th>
+						    </tr>
+						  </thead>
+						  <tbody id="searchResultsTableBody">
+						    
+						  </tbody>
+						</table>`;
+
+alertHTML = `<div class="alert alert-success" role="alert">
+							<button type="button" onClick="hideAlert()" class="close" aria-label="Close">
+						    	<span aria-hidden="true">&times;</span>
+							</button>
+							<strong>Friend request sent!</strong>
+						</div>`;
+
 gameIndex = {
 	"Counter Strike: Global Offensive":0,
 	"League of Legends":1,
@@ -216,6 +243,12 @@ rankNames = [
 	"Expert"]
 ];
 
+users = [
+{name:"JohnDoe99", age:20, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:0, rank:5, isComp:true}, {id:3, rank:1, isComp:false}]},
+{name:"abc", age:19, school:"McMaster", program:"Social Sciences", location:"Toronto, ON", games:[{id:5, rank:0, isComp:false}, {id:2, rank:2, isComp:false}]},
+{name:"player1", age:22, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:5, rank:1, isComp:false}, {id:4, rank:1, isComp:true}]}
+];
+
 
 firstGame = false;
 tabList = null;
@@ -241,6 +274,14 @@ function toggleMoreSettings() {
 
 function addGame(gameName) {
 	games.push({id:gameIndex[gameName], name:gameName, minRank:0, maxRank:rankNames[gameIndex[gameName]].length-1, isComp:false});
+}
+
+function showAlert() {
+	alertContent.innerHTML = alertHTML;
+}
+
+function hideAlert() {
+	alertContent.innerHTML = ``;
 }
 
 function onCasualClick() {
@@ -285,6 +326,45 @@ function refreshActiveTabContents() {
 	document.getElementById("maxRankIcon").className = gameFiles[games[activeTab].id] + "Icon";
 	setMinRank(games[activeTab].minRank);
 	setMaxRank(games[activeTab].maxRank);
+}
+
+function openAddFriendModal(name){
+	if(confirm(`Send friend request to ${name}`)){
+		showAlert();
+	} else {
+	}
+}
+
+function findGamers() {
+	searchResultsContent.innerHTML = searchResultsHTML;
+	tableBody = document.getElementById("searchResultsTableBody");
+	contentString = ``;
+	gamesString = ``;
+	var i;
+	var j;
+	for(i = 0; i < users.length; i++){
+		gamesString = ``;
+		for(j = 0; j < users[i].games.length; j++){
+			gamesString += `<div class="searchResultsGame">`
+			gamesString += `<img id="minRankIcon" src="src/${gameFiles[users[i].games[j].id]}.png" class="rankImg">`;
+			gamesString += `<img id="minRankIcon" src="src/ranks/${gameFiles[users[i].games[j].id]}/${users[i].games[j].rank}.png" class="rankImg">`;
+			if(users[i].games[j].isComp){
+				gamesString += `Comp.`;
+			} else {
+				gamesString += `Casual`;
+			}
+			gamesString += `</div>`;
+		}
+		contentString +=  `<tr onClick="openAddFriendModal('${users[i].name}')">
+						      <td>${users[i].name}</td>
+						      <td>${users[i].age}</td>
+						      <td>${users[i].school}</td>
+						      <td>${users[i].program}</td>
+						      <td>${users[i].location}</td>
+						      <td>${gamesString}</td>
+						    </tr>`;
+	}
+	tableBody.innerHTML = contentString;
 }
 
 function addGames() {

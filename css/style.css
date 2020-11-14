@@ -245,3 +245,43 @@ h5 {
 	width: 100px;
 	height: 50px;
 }
+
+.searchResultsGame {
+	margin: 5px;
+}
+
+th {
+	color: white;
+	text-align: center;
+    vertical-align: middle;
+}
+
+tr {
+	color: white;
+	text-align: center;
+    vertical-align: middle;
+}
+
+td {
+	color: white;
+	text-align: center;
+    vertical-align: middle;
+}
+
+tr:hover {
+	color:black;
+	background: white;
+	cursor: pointer;
+}
+
+tr:hover th {
+	color:black;
+}
+
+tr:hover td {
+	color:black;
+}
+
+#addFriendLabel {
+	color: black;
+}
