@@ -245,8 +245,8 @@ rankNames = [
 
 users = [
 {name:"JohnDoe99", age:20, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:0, rank:5, isComp:true}, {id:3, rank:1, isComp:false}]},
-{name:"abc", age:19, school:"McMaster", program:"Social Sciences", location:"Toronto, ON", games:[{id:5, rank:0, isComp:false}, {id:2, rank:2, isComp:false}]},
-{name:"player1", age:22, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:5, rank:1, isComp:false}, {id:4, rank:1, isComp:true}]}
+{name:"player1", age:22, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:5, rank:1, isComp:false}, {id:4, rank:1, isComp:true}]},
+{name:"abc", age:19, school:"McMaster", program:"Social Sciences", location:"Toronto, ON", games:[{id:5, rank:0, isComp:false}, {id:2, rank:2, isComp:false}]}
 ];
 
 

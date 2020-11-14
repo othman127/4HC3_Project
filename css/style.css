@@ -285,3 +285,17 @@ tr:hover td {
 #addFriendLabel {
 	color: black;
 }
+
+#quantity {
+	color:black;
+}
+
+#alertContent {
+	width: 57%;
+	position: fixed;
+	bottom: 0;
+}
+
+.modalTitle {
+	color:black;
+}
