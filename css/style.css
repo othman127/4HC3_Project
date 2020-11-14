@@ -157,3 +157,79 @@ h5 {
 	max-width: 30px;
 	max-height: 30px;
 }
+
+#minRank {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border: none
+}
+
+#maxRank {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border: none
+}
+
+.rankImg {
+	width: 50px;
+	height: 50px;
+}
+
+#minRank:active {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border: none
+}
+
+#maxRank:active {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border:none;
+}
+
+#minRank:focus {
+	outline-width: 0;
+}
+
+#maxRank:focus {
+	outline-width: 0;
+}
+
+.csgoIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.lolIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.dotaIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.valorantIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.amongusIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.minecraftIcon {
+	width: 80px;
+	height: 50px;
+}
+
+.monopolyIcon {
+	width: 80px;
+	height: 50px;
+}

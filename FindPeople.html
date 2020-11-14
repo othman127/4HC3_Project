@@ -83,22 +83,26 @@
 								</button>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="nav nav-tabs addGames">
-									<li class="active"><a href="#">Add Games</a></li>
-									<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">+</a></li>
-								</ul>
-								<div class="row">
-									<div class="col-md-4">
-										<h4>Click '+' to add games to search for</h4>
+
+						<!-- container to modify the HTML of the tabs based on user input -->
+						<div id="tabContainer">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="nav nav-tabs addGames">
+										<li class="active"><a href="#">Add Games</a></li>
+										<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">+</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-md-4">
+											<h4>Click '+' to add games to search for</h4>
+										</div>
+										<div class="col-md-8">
+										</div>
 									</div>
-									<div class="col-md-8">
-									</div>
+									</br>
 								</div>
-								</br>
+								</hr>
 							</div>
-						</hr>
 						</div>
 						<div class="row">
 							<div class="col-md-3">
@@ -110,10 +114,8 @@
 							</div>
 						</div>
 
+						<!-- This div gets filled with content if "More Settings" is open, empty if closed -->
 						<div id="moreSettingsContent"></div>
-
-						
-
 
 						<div class="row">
 							<div class="col-md-3">
@@ -147,44 +149,51 @@
 						<ul class="list-group checked-list-box">
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="sg1">
+									<input type="checkbox" class="custom-control-input" id="sg0">
 									<img src="src/csgo.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg1">Counter Strike: Global Offensive</label>
+									<label class="custom-control-label" for="sg0" id="sglbl0">Counter Strike: Global Offensive</label>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="sg1">
+									<img src="src/lol.png" class="gameIcon"/>
+									<label class="custom-control-label" for="sg1" id="sglbl1">League of Legends</label>
 								</div>
 							</li>
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="sg2">
-									<img src="src/lol.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg2">League of Legends</label>
+									<img src="src/dota.png" class="gameIcon"/>
+									<label class="custom-control-label" for="sg2" id="sglbl2">Dota 2</label>
 								</div>
 							</li>
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="sg3">
-									<img src="src/dota.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg3">Dota 2</label>
+									<img src="src/valorant.png" class="gameIcon"/>
+									<label class="custom-control-label" for="sg3" id="sglbl3">Valorant</label>
 								</div>
 							</li>
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="sg4">
-									<img src="src/valorant.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg4">Valorant</label>
+									<img src="src/amongus.png" class="gameIcon"/>
+									<label class="custom-control-label" for="sg4" id="sglbl4">Among Us</label>
 								</div>
 							</li>
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="sg5">
-									<img src="src/amongus.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg5">Among Us</label>
+									<img src="src/minecraft.png" class="gameIcon"/>
+									<label class="custom-control-label" for="sg5" id="sglbl5">Minecraft</label>
 								</div>
 							</li>
 							<li class="list-group-item">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="sg6">
 									<img src="src/monopoly.png" class="gameIcon"/>
-									<label class="custom-control-label" for="sg6">Monopoly</label>
+									<label class="custom-control-label" for="sg6" id="sglbl6">Monopoly</label>
 								</div>
 							</li>
 						</ul>
@@ -194,7 +203,7 @@
 		</div>
 		<div class="modal-footer">
 		<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-		<button type="button" class="btn btn-primary" data-dismiss="modal">Add Games</button>
+		<button type="button" onClick="addGames()" class="btn btn-primary" data-dismiss="modal">Add Games</button>
 		</div>
 	</div>
 	</div>
