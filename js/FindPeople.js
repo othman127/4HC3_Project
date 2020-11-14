@@ -118,7 +118,7 @@ addGamesTabContent = `<div class="row">
 										</div>
 									</div>
 									<div class="col-md-6">
-										<label class="custom-control-label moreSettingsLabel" for="casComp">Mode of Play</label>
+										<h3>Mode of Play</h3>
 										<div class="form-check casComp">
 										  <input class="form-check-input" onClick="onCasualClick()" type="radio" name="exampleRadios" id="casualRadio">
 										  <label class="form-check-label casCompRadio" for="casualRadio">
@@ -160,7 +160,7 @@ addGamesTabContentNoRank = `<div class="row">
 										</div>
 									</div>
 									<div class="col-md-6">
-										<label class="custom-control-label moreSettingsLabel" for="casComp">Mode of Play</label>
+										<h3>Mode of Play</h3>
 										<div class="form-check casComp">
 										  <input class="form-check-input" onClick="onCasualClick()" type="radio" name="exampleRadios" id="casualRadio">
 										  <label class="form-check-label casCompRadio" for="casualRadio">
