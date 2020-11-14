@@ -138,48 +138,6 @@ addGamesTabContent = `<div class="row">
 						</hr>
 						</div>`;
 
-addGamesTabContentNoRank = `<div class="row">
-							<div class="col-md-12">
-								<ul id="gameTabList" class="nav nav-tabs addGames">
-									
-								</ul>
-								<div class="row">
-									<div class="col-md-12">
-										<h3 id="selectedGameTitle">Valorant</h3>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<h3>Ranks</h3>
-										<div class="row">
-											<div class="flex-container">
-												<div id="ranksTo">
-													<h4>This game has no ranking system</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<h3>Mode of Play</h3>
-										<div class="form-check casComp">
-										  <input class="form-check-input" onClick="onCasualClick()" type="radio" name="exampleRadios" id="casualRadio">
-										  <label class="form-check-label casCompRadio" for="casualRadio">
-										    Casual
-										  </label>
-										</div>
-										<div class="form-check">
-										  <input class="form-check-input" onClick="onCompClick()" type="radio" name="exampleRadios" id="compRadio">
-										  <label class="form-check-label casCompRadio" for="compRadio">
-										    Competitive
-										  </label>
-										</div>
-									</div>
-								</div>
-								</br>
-							</div>
-						</hr>
-						</div>`;
-
 gameIndex = {
 	"Counter Strike: Global Offensive":0,
 	"League of Legends":1,
@@ -219,8 +177,12 @@ rankNames = [
 	"Legendary Eagle Master",
 	"Supreme Master First Class",
 	"Global Elite"],
-	[],
-	[],
+	["Beginner",
+	"Intermediate",
+	"Expert"],
+	["Beginner",
+	"Intermediate",
+	"Expert"],
 	["Iron 1",
 	"Iron 2",
 	"Iron 3",
@@ -243,9 +205,15 @@ rankNames = [
 	"Immortal 2",
 	"Immortal 3",
 	"Radiant"],
-	[],
-	[],
-	[]
+	["Beginner",
+	"Intermediate",
+	"Expert"],
+	["Beginner",
+	"Intermediate",
+	"Expert"],
+	["Beginner",
+	"Intermediate",
+	"Expert"]
 ];
 
 
