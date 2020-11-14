@@ -94,25 +94,67 @@ addGamesTabContent = `<div class="row">
 									<div class="col-md-6">
 										<h3>Ranks</h3>
 										<div class="row">
-											<div class="col-md-5">
-												<div class="dropdown" style="float:right">
+											<div class="flex-container">
+												<div class="dropdown">
 												    <button type="button" id="minRank" data-toggle="dropdown">
 												     <img id="minRankIcon" src="src/gold1.png" class="rankImg">
 												    </button>
 												    <ul id="minRankDropdownList" class="dropdown-menu" role="menu" aria-labelledby="minRank">
 												    </ul>
 												</div>
-											</div>
-											<div class="col-md-1">
-												<h5>to</h5>
-											</div>
-											<div class="col-md-5">
-												<div class="maxRankSelector" class="dropdown" style="float:left">
+
+												<div id="ranksTo">
+													<h4>to</h4>
+												</div>
+
+												<div class="dropdown">
 												    <button type="button" id="maxRank" data-toggle="dropdown">
 												     <img id="maxRankIcon" src="src/plat3.png" class="rankImg">
 												    </button>
 												    <ul id="maxRankDropdownList" class="dropdown-menu" role="menu" aria-labelledby="maxRank">
 												    </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<label class="custom-control-label moreSettingsLabel" for="casComp">Mode of Play</label>
+										<div class="form-check casComp">
+										  <input class="form-check-input" onClick="onCasualClick()" type="radio" name="exampleRadios" id="casualRadio">
+										  <label class="form-check-label casCompRadio" for="casualRadio">
+										    Casual
+										  </label>
+										</div>
+										<div class="form-check">
+										  <input class="form-check-input" onClick="onCompClick()" type="radio" name="exampleRadios" id="compRadio">
+										  <label class="form-check-label casCompRadio" for="compRadio">
+										    Competitive
+										  </label>
+										</div>
+									</div>
+								</div>
+								</br>
+							</div>
+						</hr>
+						</div>`;
+
+addGamesTabContentNoRank = `<div class="row">
+							<div class="col-md-12">
+								<ul id="gameTabList" class="nav nav-tabs addGames">
+									
+								</ul>
+								<div class="row">
+									<div class="col-md-12">
+										<h3 id="selectedGameTitle">Valorant</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<h3>Ranks</h3>
+										<div class="row">
+											<div class="flex-container">
+												<div id="ranksTo">
+													<h4>This game has no ranking system</h4>
 												</div>
 											</div>
 										</div>
@@ -267,7 +309,7 @@ function refreshActiveTabContents() {
 	minRankList.innerHTML = ``;
 	maxRankList.innerHTML = ``;
 	var i;
-	for(i=0; i < 22; i++){
+	for(i=0; i < rankNames[games[activeTab].id].length; i++){
 		minRankList.innerHTML += `<li onClick="setMinRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
 		maxRankList.innerHTML += `<li onClick="setMaxRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
 	}

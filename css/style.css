@@ -159,15 +159,11 @@ h5 {
 }
 
 #minRank {
-	width: 60px;
-	height: 60px;
 	background: transparent;
 	border: none
 }
 
 #maxRank {
-	width: 60px;
-	height: 60px;
 	background: transparent;
 	border: none
 }
@@ -178,15 +174,11 @@ h5 {
 }
 
 #minRank:active {
-	width: 60px;
-	height: 60px;
 	background: transparent;
 	border: none
 }
 
 #maxRank:active {
-	width: 60px;
-	height: 60px;
 	background: transparent;
 	border:none;
 }
@@ -200,8 +192,8 @@ h5 {
 }
 
 .csgoIcon {
-	width: 80px;
-	height: 50px;
+	width: 90px;
+	height: 40px;
 }
 
 .lolIcon {
@@ -215,8 +207,8 @@ h5 {
 }
 
 .valorantIcon {
-	width: 80px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
 
 .amongusIcon {
@@ -231,5 +223,25 @@ h5 {
 
 .monopolyIcon {
 	width: 80px;
+	height: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#ranksTo {
+	width: 80px;
+}
+
+#ranksTo > h4 {
+	text-align: center;
+}
+
+.dropdown {
+	width: 100px;
 	height: 50px;
 }
