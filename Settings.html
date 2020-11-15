@@ -7,7 +7,7 @@
 		<title>Connect.gg</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/CreateEvent.css" rel="stylesheet">
+		<link href="css/Settings.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
 		<div class="p-3 mb-2 bg-dark text-white"></div>
@@ -91,8 +91,24 @@
 <div>Settings</div>
 </a>
 							</div>
-                        </div>
-                        
+						</div>
+					</div>
+					</div>
+					</div>
+                        <div class="container">
+							<div class="pass">
+							   <h3>Password Reset</h3>
+							   <p></p>
+							   <form class="pb-3" action="#">
+								  <div class="form-group">
+									 <input type="text" class="form" placeholder="Enter Email or Username" required>
+								  </div>
+							   </form>
+							   <button type="button" class="btn" onclick="notif()">Send Password Reset Link</button>
+							</div>
+							<a class="next" href="/index.html" onclick="notif2()" id="next">Sign out</a>
+						 </div>
+				   
 
                
 
@@ -102,5 +118,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/FindPeople.js"></script>
+	<script src="js/FindPeople.js"></script>
+	<script>
+		function notif(){
+			alert("Password Reset has been sent");
+		}
+		function notif2(){
+			alert("You have succesfully signed out");
+		}
+
+
+	</script>
     </html>
