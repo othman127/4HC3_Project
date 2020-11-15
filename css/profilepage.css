@@ -1,0 +1,127 @@
+h2 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  body {
+    background: #1b252e;
+  }
+
+
+  .Profile_pic{
+      height: 150px;
+      width: 150px;
+  }
+
+  .image {
+      margin-left:520px;
+      height: 150px;
+      width:150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .user_name{
+    margin-left:520px;
+    color: white;
+  }
+  
+  .ContainerX{
+      display: flex;
+      flex-direction: row;
+      margin-left: 400px;
+      align-content: center;
+
+  }
+
+  .ContainerY{
+    margin-left: 300px;
+  }
+  
+  #friends{
+      text-decoration: underline;
+      font-size: 22px;
+      color: white;
+  }
+
+  #Events{
+    text-decoration: underline;
+    font-size: 22px;
+    color: white;
+}
+
+#game_genre{
+    text-decoration: underline;
+    font-size: 22px;
+    color: white;
+}
+
+#intro{
+    color: white;
+}
+
+.bio{
+    margin-left:1000px;
+    color: black;
+    
+}
+
+.status_image{
+    display: flex;
+    flex-direction: row;
+}
+
+#league{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    align-content: center;
+}
+#dota{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#valorant{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.status_date{
+    display:flex;
+    flex-direction: row;
+}
+.status{
+    margin-left: 50px;
+    color: white;
+}
+
+#date1{
+    margin-left: 125px;
+}
+
+#date2{
+    margin-left: 135px;
+}
+
+.lastseen{
+    display: flex;
+    flex-direction: row;
+}
+
+#event{
+    margin-left: 100px;
+}
+#toggle{
+    margin-top: 40px;
+    margin-left:20px;
+}
+
+#toggle1{
+    margin-top: 40px;
+    margin-left:20px;
+}
