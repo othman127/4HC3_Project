@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Connect.gg</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -106,6 +107,20 @@
 							   </form>
 							   <button type="button" class="btn" onclick="notif()">Send Password Reset Link</button>
 							</div>
+							<div class="boyo">
+								<button type="button" class="btn" id="about" onclick="notif1()">About</button>
+								<button data-modal-target="#modal" type="button" class="btn" id="feedback" >Feedback</button>
+								<div class="modal" id="modal">
+									<div class="modal-header">
+									  <div class="title">Example Modal</div>
+									  <button data-close-button class="close-button">&times;</button>
+									</div>
+									<div class="modal-body">
+									  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+									</div>
+								  </div>
+								  <div id="overlay"></div>
+							</div>
 							<a class="next" href="/index.html" onclick="notif2()" id="next">Sign out</a>
 						 </div>
 				   
@@ -122,6 +137,9 @@
 	<script>
 		function notif(){
 			alert("Password Reset has been sent");
+		}
+		function notif1(){
+			alert("Connect.gg was created by othman mullick, jordan levy and hahd khan \n \n" + "Version 1.0" );
 		}
 		function notif2(){
 			alert("You have succesfully signed out");
