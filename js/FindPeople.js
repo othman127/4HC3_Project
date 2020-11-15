@@ -5,26 +5,257 @@ alertContent = document.getElementById("alertContent");
 moreSettingsOpen = false;
 moreSettingsHTML = `<div class="row">
 							<div class="col-md-4">
-							    <label class="moreSettingsLabel" for="schoolTb">School</label>
+							    <label class="moreSettingsLabel" for="school">School</label>
 								</br>
-							    <input type="text" class="form-control" placeholder="Enter school">
+						    	<select id="school" class="autocorrectTextBox stringTextBox" name="school">
+						    	  <option>-</option>
+								  <option>McMaster</option>
+								  <option>Guelph</option>
+								  <option>Waterloo</option>
+								</select>
+							    </input>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-4">
 							    <label class="moreSettingsLabel" for="schoolTb">Program</label>
 							    </br>
-							    <input type="text" class="form-control" placeholder="Enter program">
+							    <select id="program" class="autocorrectTextBox stringTextBox" name="program">
+							      <option>-</option>
+							      <option>Commerce</option>
+								  <option>Software Engineering</option>
+								  <option>Social Sciences</option>
+								</select>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-4">
 							    <label class="moreSettingsLabel" for="quantity">Age</label>
 								</br>
-								<p>
-								<input type="number" id="quantity" min="18" max="150">
+								<p id="quantity">
+								<select id="minAge" class="autocorrectTextBox intTextBox" name="minAge">
+								  <option>-</option>
+								  <option>13</option>
+								  <option>14</option>
+								  <option>15</option>
+								  <option>16</option>
+								  <option>17</option>
+								  <option>18</option>
+								  <option>19</option>
+								  <option>20</option>
+								  <option>21</option>
+								  <option>22</option>
+								  <option>23</option>
+								  <option>24</option>
+								  <option>25</option>
+								  <option>26</option>
+								  <option>27</option>
+								  <option>28</option>
+								  <option>29</option>
+								  <option>30</option>
+								  <option>31</option>
+								  <option>32</option>
+								  <option>33</option>
+								  <option>34</option>
+								  <option>35</option>
+								  <option>36</option>
+								  <option>37</option>
+								  <option>38</option>
+								  <option>39</option>
+								  <option>40</option>
+								  <option>41</option>
+								  <option>42</option>
+								  <option>43</option>
+								  <option>44</option>
+								  <option>45</option>
+								  <option>46</option>
+								  <option>47</option>
+								  <option>48</option>
+								  <option>49</option>
+								  <option>50</option>
+								  <option>51</option>
+								  <option>52</option>
+								  <option>53</option>
+								  <option>54</option>
+								  <option>55</option>
+								  <option>56</option>
+								  <option>57</option>
+								  <option>58</option>
+								  <option>59</option>
+								  <option>60</option>
+								  <option>61</option>
+								  <option>62</option>
+								  <option>63</option>
+								  <option>64</option>
+								  <option>65</option>
+								  <option>66</option>
+								  <option>67</option>
+								  <option>68</option>
+								  <option>69</option>
+								  <option>70</option>
+								  <option>71</option>
+								  <option>72</option>
+								  <option>73</option>
+								  <option>74</option>
+								  <option>75</option>
+								  <option>76</option>
+								  <option>77</option>
+								  <option>78</option>
+								  <option>79</option>
+								  <option>80</option>
+								  <option>81</option>
+								  <option>82</option>
+								  <option>83</option>
+								  <option>84</option>
+								  <option>85</option>
+								  <option>86</option>
+								  <option>87</option>
+								  <option>88</option>
+								  <option>89</option>
+								  <option>90</option>
+								  <option>91</option>
+								  <option>92</option>
+								  <option>93</option>
+								  <option>94</option>
+								  <option>95</option>
+								  <option>96</option>
+								  <option>97</option>
+								  <option>98</option>
+								  <option>99</option>
+								  <option>100</option>
+								  <option>101</option>
+								  <option>102</option>
+								  <option>103</option>
+								  <option>104</option>
+								  <option>105</option>
+								  <option>106</option>
+								  <option>107</option>
+								  <option>108</option>
+								  <option>109</option>
+								  <option>10</option>
+								  <option>111</option>
+								  <option>112</option>
+								  <option>113</option>
+								  <option>114</option>
+								  <option>115</option>
+								  <option>116</option>
+								  <option>117</option>
+								  <option>118</option>
+								  <option>119</option>
+								  <option>120</option>
+								</select>
 								to
-								<input type="number" id="quantity" min="18" max="150">
+								<select id="maxAge" class="autocorrectTextBox intTextBox" name="maxAge">
+								  <option>-</option>
+								  <option>13</option>
+								  <option>14</option>
+								  <option>15</option>
+								  <option>16</option>
+								  <option>17</option>
+								  <option>18</option>
+								  <option>19</option>
+								  <option>20</option>
+								  <option>21</option>
+								  <option>22</option>
+								  <option>23</option>
+								  <option>24</option>
+								  <option>25</option>
+								  <option>26</option>
+								  <option>27</option>
+								  <option>28</option>
+								  <option>29</option>
+								  <option>30</option>
+								  <option>31</option>
+								  <option>32</option>
+								  <option>33</option>
+								  <option>34</option>
+								  <option>35</option>
+								  <option>36</option>
+								  <option>37</option>
+								  <option>38</option>
+								  <option>39</option>
+								  <option>40</option>
+								  <option>41</option>
+								  <option>42</option>
+								  <option>43</option>
+								  <option>44</option>
+								  <option>45</option>
+								  <option>46</option>
+								  <option>47</option>
+								  <option>48</option>
+								  <option>49</option>
+								  <option>50</option>
+								  <option>51</option>
+								  <option>52</option>
+								  <option>53</option>
+								  <option>54</option>
+								  <option>55</option>
+								  <option>56</option>
+								  <option>57</option>
+								  <option>58</option>
+								  <option>59</option>
+								  <option>60</option>
+								  <option>61</option>
+								  <option>62</option>
+								  <option>63</option>
+								  <option>64</option>
+								  <option>65</option>
+								  <option>66</option>
+								  <option>67</option>
+								  <option>68</option>
+								  <option>69</option>
+								  <option>70</option>
+								  <option>71</option>
+								  <option>72</option>
+								  <option>73</option>
+								  <option>74</option>
+								  <option>75</option>
+								  <option>76</option>
+								  <option>77</option>
+								  <option>78</option>
+								  <option>79</option>
+								  <option>80</option>
+								  <option>81</option>
+								  <option>82</option>
+								  <option>83</option>
+								  <option>84</option>
+								  <option>85</option>
+								  <option>86</option>
+								  <option>87</option>
+								  <option>88</option>
+								  <option>89</option>
+								  <option>90</option>
+								  <option>91</option>
+								  <option>92</option>
+								  <option>93</option>
+								  <option>94</option>
+								  <option>95</option>
+								  <option>96</option>
+								  <option>97</option>
+								  <option>98</option>
+								  <option>99</option>
+								  <option>100</option>
+								  <option>101</option>
+								  <option>102</option>
+								  <option>103</option>
+								  <option>104</option>
+								  <option>105</option>
+								  <option>106</option>
+								  <option>107</option>
+								  <option>108</option>
+								  <option>109</option>
+								  <option>10</option>
+								  <option>111</option>
+								  <option>112</option>
+								  <option>113</option>
+								  <option>114</option>
+								  <option>115</option>
+								  <option>116</option>
+								  <option>117</option>
+								  <option>118</option>
+								  <option>119</option>
+								  <option>120</option>
+								</select>
 								</p>
 							</div>
 						</div>
@@ -99,7 +330,7 @@ addGamesTabContent = `<div class="row">
 											<div class="flex-container">
 												<div class="dropdown">
 												    <button type="button" id="minRank" data-toggle="dropdown">
-												     <img id="minRankIcon" src="src/gold1.png" class="rankImg">
+												     <img id="minRankIcon" class="rankImg">
 												    </button>
 												    <ul id="minRankDropdownList" class="dropdown-menu" role="menu" aria-labelledby="minRank">
 												    </ul>
@@ -111,7 +342,7 @@ addGamesTabContent = `<div class="row">
 
 												<div class="dropdown">
 												    <button type="button" id="maxRank" data-toggle="dropdown">
-												     <img id="maxRankIcon" src="src/plat3.png" class="rankImg">
+												     <img id="maxRankIcon" class="rankImg">
 												    </button>
 												    <ul id="maxRankDropdownList" class="dropdown-menu" role="menu" aria-labelledby="maxRank">
 												    </ul>
@@ -139,6 +370,24 @@ addGamesTabContent = `<div class="row">
 							</div>
 						</hr>
 						</div>`;
+
+addGamesContentDefault = `<div class="row">
+								<div class="col-md-12">
+									<ul class="nav nav-tabs addGames">
+										<li class="active"><a href="#">Add Games</a></li>
+										<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">+</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-md-4">
+											<h4>Click '+' to add games to search for</h4>
+										</div>
+										<div class="col-md-8">
+										</div>
+									</div>
+									</br>
+								</div>
+								</hr>
+							</div>`;
 
 searchResultsHTML = `
 <h3>Search Results</h3>
@@ -174,6 +423,16 @@ gameIndex = {
 	"Minecraft":5,
 	"Monopoly":6
 };
+
+gameNames = [
+	"Counter Strike: Global Offensive",
+	"League of Legends",
+	"Dota 2",
+	"Valorant",
+	"Among Us",
+	"Minecraft",
+	"Monopoly"
+];
 
 gameFiles = [
 	"csgo",
@@ -245,17 +504,16 @@ rankNames = [
 
 users = [
 {name:"JohnDoe99", age:20, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:0, rank:5, isComp:true}, {id:3, rank:1, isComp:false}]},
-{name:"player1", age:22, school:"McMaster", program:"Software Engineering", location:"Hamilton, ON", games:[{id:5, rank:1, isComp:false}, {id:4, rank:1, isComp:false}]},
-{name:"abc", age:19, school:"McMaster", program:"Software Engineering", location:"Toronto, ON", games:[{id:4, rank:0, isComp:false}, {id:2, rank:2, isComp:false}]}
+{name:"player1", age:22, school:"Guelph", program:"Software Engineering", location:"Hamilton, ON", games:[{id:5, rank:1, isComp:false}, {id:4, rank:1, isComp:false}]},
+{name:"abc", age:19, school:"McMaster", program:"Commerce", location:"Toronto, ON", games:[{id:4, rank:0, isComp:false}, {id:2, rank:2, isComp:false}]}
 ];
-
 
 firstGame = false;
 tabList = null;
 tabString = "";
 games = [];
 nextTabId = 0;
-activeTab = 0;
+activeTab = -1;
 
 
 function toggleMoreSettings() {
@@ -270,10 +528,13 @@ function toggleMoreSettings() {
 		moreSettingsBtn.className = "btn btn-primary myBtns"
 		moreSettingsContent.innerHTML = '';
 	}
+	//start autocorrect
+    $('.autocorrectTextBox').select2();
 }
 
-function addGame(gameName) {
-	games.push({id:gameIndex[gameName], name:gameName, minRank:0, maxRank:rankNames[gameIndex[gameName]].length-1, isComp:false});
+function addGame(gameId) {
+	games.push({id:gameId, minRank:0, maxRank:(rankNames[gameId].length-1), isComp:false});
+	activeTab = games.length - 1;
 }
 
 function showAlert() {
@@ -309,23 +570,65 @@ function setMaxRank(i) {
 	document.getElementById("maxRankIcon").src=`src/ranks/${gameFiles[games[activeTab].id]}/${games[activeTab].maxRank}.png`;
 }
 
-function refreshActiveTabContents() {
-	document.getElementById("selectedGameTitle").innerText = games[activeTab].name;
-	document.getElementById("casualRadio").checked = !games[activeTab].isComp;
-	document.getElementById("compRadio").checked = games[activeTab].isComp;
-	minRankList = document.getElementById("minRankDropdownList");
-	maxRankList = document.getElementById("maxRankDropdownList");
-	minRankList.innerHTML = ``;
-	maxRankList.innerHTML = ``;
-	var i;
-	for(i=0; i < rankNames[games[activeTab].id].length; i++){
-		minRankList.innerHTML += `<li onClick="setMinRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
-		maxRankList.innerHTML += `<li onClick="setMaxRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
+function deleteGameTab() {
+	games.splice(activeTab, 1);
+	if(games.length > 0){
+		activeTab = Math.max(0, activeTab-1);
 	}
-	document.getElementById("minRankIcon").className = gameFiles[games[activeTab].id] + "Icon";
-	document.getElementById("maxRankIcon").className = gameFiles[games[activeTab].id] + "Icon";
-	setMinRank(games[activeTab].minRank);
-	setMaxRank(games[activeTab].maxRank);
+	else {
+		activeTab = -1;
+	}
+	setGameTabs();
+	refreshActiveTabContents();
+}
+
+function setGameTabs(){
+	var i;
+	tabContainer = document.getElementById("tabContainer");
+	if(games.length === 0){
+		tabContainer.innerHTML = addGamesContentDefault;
+		return;
+	}
+	else {
+		tabContainer.innerHTML = addGamesTabContent;
+	}
+	tabList = document.getElementById("gameTabList");
+	tabString = "";
+	for(i=0; i < games.length; i++){
+		gameId = games[i].id;
+		tabString += `<li onClick="onTabClick(${i})"><a href="#"><img class="iconTab" id="tab0" src="src/${gameFiles[gameId]}.png"/></a></li>`;
+		nextTabId++;
+	}
+	if(games.length > 0) {
+		tabList.innerHTML = tabString + `<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">+</a></li>`;
+	}
+	refreshActiveTabContents();
+}
+
+function refreshActiveTabContents() {
+	if(games.length > 0)
+	{
+		var i;
+		document.getElementById("selectedGameTitle").innerHTML = `${gameNames[games[activeTab].id]}
+			<button onClick="deleteGameTab()" class="btn btn-primary myBtns deleteGameButton">&times;</button>`;
+		document.getElementById("casualRadio").checked = !games[activeTab].isComp;
+		document.getElementById("compRadio").checked = games[activeTab].isComp;
+		minRankList = document.getElementById("minRankDropdownList");
+		maxRankList = document.getElementById("maxRankDropdownList");
+		minRankList.innerHTML = ``;
+		maxRankList.innerHTML = ``;
+		for(i=0; i < rankNames[games[activeTab].id].length; i++){
+			minRankList.innerHTML += `<li onClick="setMinRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
+			maxRankList.innerHTML += `<li onClick="setMaxRank(${i})"><a href="#"><img class="${gameFiles[games[activeTab].id]}Icon" src="src/ranks/${gameFiles[games[activeTab].id]}/${i}.png" class="rankImg"/>${rankNames[games[activeTab].id][i]}</a></li>`;
+		}
+		document.getElementById("minRankIcon").className = gameFiles[games[activeTab].id] + "Icon";
+		document.getElementById("maxRankIcon").className = gameFiles[games[activeTab].id] + "Icon";
+		setMinRank(games[activeTab].minRank);
+		setMaxRank(games[activeTab].maxRank);
+	}
+	else{
+		document.getElementById("tabContainer").innerHTML = addGamesContentDefault;
+	}
 }
 
 function openAddFriendModal(name){
@@ -335,32 +638,104 @@ function openAddFriendModal(name){
 	}
 }
 
+//returns i where i is index of game with that id in games array
+//-1 if not found
+function searchingForGame(id){
+	var i;
+	for(i=0; i < games.length; i++){
+		if(games[i].id === id){
+			return i;
+		}
+	}
+	return -1;
+}
+
+function sortScore(a){
+	score = 0;
+	schoolElement = document.getElementById("school");
+	programElement = document.getElementById("program");
+	minAgeElement = document.getElementById("minAge");
+	maxAgeElement = document.getElementById("maxAge");
+
+	if(schoolElement && programElement && minAgeElement && maxAgeElement) {
+		school = schoolElement.options[schoolElement.selectedIndex].text;
+		program = programElement.options[programElement.selectedIndex].text;
+		minAge = minAgeElement.options[minAgeElement.selectedIndex].text;
+		maxAge = maxAgeElement.options[maxAgeElement.selectedIndex].text;
+
+		if(school === a.school){
+			score += 5;
+		}
+		if(program === a.program){
+			score += 5;
+		}
+		if(a.age >= minAge && a.age <= maxAge){
+			score += 5;
+		}
+	}
+	var i;
+	for(i=0; i < a.games.length; i++){
+		gameIndex = searchingForGame(a.games[i].id);
+		//if this is a game we are searching for
+		if(gameIndex >= 0){
+			game = games[gameIndex];
+			score += 10;
+			//if the user is within the rank range
+			if(a.games[i].rank >= game.minRank && a.games[i].rank <= game.maxRank){
+				score += 10;
+			}
+			//if the user has the correct mode of play
+			if(a.games[i].isComp === game.isComp){
+				score += 5;
+			}
+		}
+	}
+	return score;
+}
+
+function filterResults(a) {
+	var i;
+	for(i=0; i < a.games.length; i++){
+		gameIndex = searchingForGame(a.games[i].id);
+		//if this is a game we are searching for
+		if(gameIndex >= 0){
+			return true;
+		}
+	}
+	return false;
+}
+
 function findGamers() {
 	searchResultsContent.innerHTML = searchResultsHTML;
 	tableBody = document.getElementById("searchResultsTableBody");
 	contentString = ``;
 	gamesString = ``;
+	results = [...users];
+	results.sort(function(x, y) {
+		return sortScore(y) - sortScore(x);
+	});
+	results = results.filter(filterResults);
 	var i;
 	var j;
-	for(i = 0; i < users.length; i++){
+	for(i = 0; i < results.length; i++){
 		gamesString = ``;
-		for(j = 0; j < users[i].games.length; j++){
+		for(j = 0; j < results[i].games.length; j++){
 			gamesString += `<div class="searchResultsGame">`
-			gamesString += `<img id="minRankIcon" src="src/${gameFiles[users[i].games[j].id]}.png" class="rankImg">`;
-			gamesString += `<img id="minRankIcon" src="src/ranks/${gameFiles[users[i].games[j].id]}/${users[i].games[j].rank}.png" class="rankImg">`;
-			if(users[i].games[j].isComp){
+			gamesString += `<img id="minRankIcon" src="src/${gameFiles[results[i].games[j].id]}.png" class="rankImg">`;
+			gamesString += `<img id="minRankIcon" src="src/ranks/${gameFiles[results[i].games[j].id]}/${results[i].games[j].rank}.png" class="rankImg">`;
+			if(results[i].games[j].isComp){
 				gamesString += `Comp.`;
 			} else {
 				gamesString += `Casual`;
 			}
 			gamesString += `</div>`;
 		}
-		contentString +=  `<tr onClick="openAddFriendModal('${users[i].name}')">
-						      <td>${users[i].name}</td>
-						      <td>${users[i].age}</td>
-						      <td>${users[i].school}</td>
-						      <td>${users[i].program}</td>
-						      <td>${users[i].location}</td>
+		contentString +=  `<tr onClick="openAddFriendModal('${results[i].name}')">
+						      <td>${results[i].name}</td>
+						      <td>${results[i].age}</td>
+						      <td>${results[i].school}</td>
+						      <td>${results[i].program}</td>
+						      <td>${results[i].location}</td>
 						      <td>${gamesString}</td>
 						    </tr>`;
 	}
@@ -376,22 +751,8 @@ function addGames() {
 			//and if it is checked
 			if(n.checked){
 				//add the game
-				if(!firstGame){
-					firstGame = true;
-					document.getElementById("tabContainer").innerHTML = addGamesTabContent;
-					gameName = document.getElementById("sglbl"+i).textContent;
-					tabList = document.getElementById("gameTabList");
-					tabString += `<li onClick="onTabClick(${nextTabId})"><a href="#"><img class="iconTab" id="tab0" src="src/${gameFiles[gameIndex[gameName]]}.png"/></a></li>`;
-					addGame(gameName);
-					nextTabId++;
-				}
-				else
-				{
-					gameName = document.getElementById("sglbl"+i).textContent;
-					tabString += `<li onClick="onTabClick(${nextTabId})"><a href="#"><img class="iconTab" id='"tab${nextTabId}' src="src/${gameFiles[gameIndex[gameName]]}.png"/></a></li>`;
-					addGame(gameName);
-					nextTabId++;
-				}
+				gameId = i;
+				addGame(gameId);
 			}
 		}
 		//if there are no more games in the list, return
@@ -401,8 +762,6 @@ function addGames() {
 		i += 1;
 		n = document.getElementById("sg"+i);
 	}
-	if(firstGame) {
-		tabList.innerHTML = tabString + `<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">+</a></li>`;
-	}
+	setGameTabs();
 	refreshActiveTabContents();
 }

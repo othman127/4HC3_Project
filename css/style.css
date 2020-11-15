@@ -286,6 +286,14 @@ tr:hover td {
 }
 
 #quantity {
+	color:white;
+}
+
+#minAge {
+	color:black;
+}
+
+#maxAge {
 	color:black;
 }
 
@@ -297,4 +305,19 @@ tr:hover td {
 
 .modalTitle {
 	color:black;
+}
+
+.stringTextBox {
+	width: 20em;
+}
+
+.intTextBox {
+	width: 4em;
+}
+
+.deleteGameButton {
+	text-align: center;
+	font-size: 20px;
+	width: 2em;
+	height: 2em;
 }
