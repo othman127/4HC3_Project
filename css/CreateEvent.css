@@ -58,7 +58,26 @@ body {
     color: white;
     font-size: 18px;
   }
-  .next{
+
+  .next {
+    border: 2px solid transparent;
+    background: #337ab7;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
     margin-top: 50px;
     margin-left: 900px;
-  }
+}
+
+.next:hover {
+    background-color: #337ab7;
+}
+

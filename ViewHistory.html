@@ -7,20 +7,20 @@
 		<title>Connect.gg</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/CreateEvent.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/ViewHistory.css" rel="stylesheet">
 
 		<div class="p-3 mb-2 bg-dark text-white"></div>
-    </head>
-    
-    <body>
+	</head>
+	<body>
 		
+
 		<div class="wrapper container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="text-center">
 						<div class="row">
-							<h1>Create Event</h1>
+							<h1>View History</h1>
 						</div>
 						<div class="row">
 							<div class="col-md-3">
@@ -34,7 +34,7 @@
 										<br/>
 										<a class="dropdown-item">Add Friends</a>
 										<br/>
-										<a class="dropdown-item" href="/FindPeople.html">Find People</a>
+										<a class="dropdown-item">Find People</a>
 										<br/>
 									</div>
 								</div>
@@ -48,7 +48,7 @@
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 										<a class="dropdown-item">Find Event</a>
 										<br/>
-										<a class="dropdown-item">Create Event</a>
+										<a class="dropdown-item" href="CreateEvent.html">Create Event</a>
 										<br/>
 										<a class="dropdown-item">View Calendar</a>
 										<br/>
@@ -68,7 +68,7 @@
 									</button>
 									<!-- Each character will have their own % ranges for Low and Mid %. -->
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item">Profile Page</a>
+										<a class="dropdown-item" href="profilepage.html">Profile Page</a>
 										<br/>
 										<a class="dropdown-item" href="/ViewHistory.html">View History</a>
 										<br/>
@@ -83,45 +83,11 @@
 </svg>
 								</button>
 							</div>
-						</div>
-
-						<div class = "flex-container">
-                            <form>
-								<div class ="details">
-								<h2 id ="View_event_details">View event details</h2>
-								<label for="admin">Admin:</label><br>
-								<input type="text" id="admin" name="admin"><br><br>
-								<label for="Event_members">Event members:</label><br>
-								<select name="Event_members" id="Event_members">
-									<option value="volvo">4HC3 group</option>
-								  </select>
-								<input type="text" id="Event_members" name="Event_members"><br><br>
-								<label for="Date_time">Date and Time:</label><br>
-								<input type="text" id="Date_time" name="Date_time"><br><br>
-								<label for="Location">Location:</label><br>
-								<input type="text" id="Location" name="Location">
-								<br><br><br>
-
-                                <a class="submit" value="Submit" class="next" onclick="notif()">Create Event!</a>
-
-							</div>
-							  </form>
-                        
                         </div>
-                       
-				
-						
-
-    </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/FindPeople.js"></script>
-    <script src="js/CreateEvent.js"></script>
-    <script>
-        function notif() {
-            alert("You're Event has been successfully Created")
-    }
-    </script>
-    
+                        <div id="test">
+                        <h3 id="h3">
+                            Here you can view your past events and rate them:
+                        </h3>
+                        <a class="next" href="/FindEvent.html">You have no past events, click here to join an event!</a>
+                    </div>
+                    </body>
