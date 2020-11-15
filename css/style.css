@@ -90,8 +90,6 @@ p {
 	float: top;
 }
 
-.weekdayHeaders {
-}
 
 .dayHeader {
 	width: 100px;
@@ -100,9 +98,6 @@ p {
 	font-weight: bold;
 }
 
-.week {
-
-}
 
 .weekDay {
 	width: 100px;

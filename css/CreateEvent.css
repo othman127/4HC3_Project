@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: wrap;
     margin-top: 50px;
+    margin-right: 100px;
   }
   
   .time {
@@ -31,12 +32,12 @@ body {
   .Event_date {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 100px;
   
   }
   
   #Select_event_date{
-    padding-left: 50px;
+    padding-left: 100px;
     color: white;
   }
   
@@ -47,16 +48,17 @@ body {
   }
   
   .notif{
-    padding-left: 50px;
+    padding-left: 100px;
     color: white;
   
   }
   
   .details{
-    padding-left: 50px;
+    padding-left: 100px;
     color: white;
     font-size: 18px;
   }
-  .submit{
-    margin-left: 350px;
+  .next{
+    margin-top: 50px;
+    margin-left: 900px;
   }

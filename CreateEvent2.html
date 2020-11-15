@@ -86,82 +86,29 @@
 						</div>
 
 						<div class = "flex-container">
-							<form action="/action_page.php">
-								<h2 id = "Select_event_header">Select Event Type</h2>
-								<div class = "Event_type">
-								<p>Please select one option</p>
-								<input type="radio" id="one_time" value="one_time">
-								<label for="one_time">One Time Event</label><br>
-								<input type="radio" id="Repeating" value="Repeating">
-								<label for="Repeating">Repeating Event</label><br>
-								<br></br>
-								<p>Please select the type of event:</p>
-								<input type="radio" id="Scrimmage" value="Scrimmage">
-								<label for="Scrimmage">Scrimmage</label><br>
-								<input type="radio" id="Queue_up"  value="Queue_up">
-								<label for="Queue_up">Queue up</label><br>
-								<input type="radio" id="Tournament"  value="Tournament">
-								<label for="Tournament">Tournament</label>
-								<br>
-							</div>
-							</form>
-				
-				
-				
-							<form action="/action_page.php">
-								<h2 id = "Select_event_date">Select Event date</h2>
-								<div class = "Event_date">
-								<label for="time" class = "time">Select a Time:</label>
-								<!-- <select name="time" id="time">
-								  <option value="1:00">1:00</option>
-								  <option value="2:00">2:00</option>
-								  <option value="3:00">3:00</option>
-								  <option value="1:00">4:00</option>
-								  <option value="1:00">5:00</option>
-								  <option value="1:00">6:00</option>
-								  <option value="1:00">7:00</option>
-								  <option value="1:00">8:00</option>
-								  <option value="1:00">9:00</option>
-								  <option value="1:00">10:00</option>
-								  <option value="1:00">11:00</option>
-								  <option value="1:00">12:00</option>
-								  <option value="1:00">1:00</option>
-								  <option value="1:00">1:00</option>
-								  <option value="1:00">1:00</option>
-								  <option value="1:00">1:00</option>
-								  <option value="1:00">1:00</option>
-
-								  
-								</select> -->
-								<input type="time" id="appt" name="appt"
-								min="00:00" max="24:00" required>
-								<label for="date" class = "date">Select a date:</label>
-								<input type="date" id="date" name="date">
-								</select>
+                            <form>
+								<div class ="details">
+								<h2 id ="View_event_details">View event details</h2>
+								<label for="admin">Admin:</label><br>
+								<input type="text" id="admin" name="admin"><br><br>
+								<label for="Event_members">Event members:</label><br>
+								<select name="Event_members" id="Event_members">
+									<option value="volvo">4HC3 group</option>
+								  </select>
+								<input type="text" id="Event_members" name="Event_members"><br><br>
+								<label for="Date_time">Date and Time:</label><br>
+								<input type="text" id="Date_time" name="Date_time"><br><br>
+								<label for="Location">Location:</label><br>
+								<input type="text" id="Location" name="Location">
+								<br><br><br>
+								<input type="submit" value="Submit" class="next">
 							</div>
 							  </form>
+                        
+                        </div>
+                       
 				
-				
-							  <form action="/action_page.php">
-								<div class=notif>
-							  <h2 id = "Select_event_notifications">Enable Event notifications</h2>
-								<label class="enable">Enable 
-								<input type="checkbox" checked="checked">
-								</label>
-								<br><br><br><br><br>
-							  <h2 id="Set_event_status">Set event status</h2>
-								  <label class="active">Active
-								<input type="checkbox" checked="checked">
-								</label>
-								<label class="inactive">Inactive 
-								<input type="checkbox" checked="checked">
-								</label>
-							</div>
-							</form>
-							  
-						</div>
-						<input type="submit" value="Next page" href="/CreateEvent2.html" class="next">
-
+						
 
     </body>
 
