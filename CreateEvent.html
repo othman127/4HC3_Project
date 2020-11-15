@@ -93,7 +93,7 @@
 							</div>
 						</div>
 
-						<div class = "flex-container">
+						<div class = "flex-container" id="cont1">
 							<form action="/action_page.php">
 								<h2 id = "Select_event_header">Select Event Type</h2>
 								<div class = "Event_type">
@@ -120,18 +120,64 @@
 								<h2 id = "Select_event_date">Select Event date</h2>
 								<div class = "Event_date">
 								<label for="time" class = "time">Select a Time:</label>
-								<input type="time" id="appt" name="appt"
-								min="00:00" max="24:00" required>
+								<input onchange="bruh()" type="time" id="appt" name="appt" aria-valuenow="time"
+								min="00:00" max="23:59" required>
 								<label for="date" class = "date">Select a date:</label>
-								<input type="date" id="date" name="date">
+								<input onchange="getDate()" type="date" id="date" name="date">
 								</select>
 							</div>
 							  </form>
-				
-			
+							  </div>
+							  </div>
+							  </div>
+							  </div>
+							  
+
+
+							  <div class = "flex-container" id="cont2">
+
+								<form action="/action_page.php">
+									<div class=notif>
+								  <h2 id = "Select_event_notifications">Enable Event notifications</h2>
+									<label class="enable">Enable 
+									<input type="checkbox" checked="checked">
+									</label>
+									<br><br><br><br><br>
+								  <h2 id="Set_event_status">Set event status</h2>
+									  <label class="active">Active
+									<input type="checkbox" checked="checked">
+									</label>
+									<label class="inactive">Inactive 
+									<input type="checkbox" checked="checked">
+									</label>
+								</div>
+								</form> 
+	
+								<form>
+									<div class ="details">
+									<h2 id ="View_event_details">View event details</h2>
+									<label for="admin">Admin:</label><br>
+									<input type="text" id="admin" name="admin" placeholder="Enter Admin"><br><br>
+									<label for="Event_members">Event members:</label><br>
+									<select name="Event_members" id="Event_members">
+										<option >4HC3 group</option>
+									  </select>
+									<input type="text" name="Event_members" placeholder="Enter Emails or username"><br><br>
+									<label for="Date_time">Date and Time:</label><br>
+									<input type="text" id="Date_time" name="Date_time" value=" " ><br><br>
+									<label for="Location">Location:</label><br>
+									<select name="Location" id="Locations">
+										<option  value="Online">Online</option>
+										<option  value="On-Campus">On-Campus</option>
+										<option value="Off-Campus">Off-Campus</option>
+									  </select>
+									<br><br><br>
+	
+								</div>
+								  </form>
 
 						</div>
-						<a class="next" href="/CreateEvent2.html">Next Page</a>
+						<a class="next" onclick="nextPage()" id="next">Next Page</a>
 
 
     </body>
@@ -140,4 +186,4 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/FindPeople.js"></script>
-    <script src="js/CreateEvent.js"></script>
+	<script src="js/CreateEvent.js"></script>

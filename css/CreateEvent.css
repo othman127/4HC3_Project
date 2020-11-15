@@ -4,10 +4,24 @@ body {
   
   .flex-container {
     display: flex;
+    text-align: center;
     flex-direction: wrap;
     margin-top: 50px;
     margin-right: 100px;
   }
+
+  #cont2 {
+    display: none;
+   }
+
+   #cont1 {
+    display: flex;
+   }
+
+   #admin{
+     color: black;
+   }
+  
   
   .time {
     font-size: 20px;
@@ -34,6 +48,9 @@ body {
     flex-direction: column;
     padding-left: 100px;
   
+  }
+  #Event_members{
+    color:black;
   }
   
   #Select_event_date{
@@ -69,9 +86,10 @@ body {
     border-radius: 3px;
     transition: 0.25s;
     display: block;
-    width: 250px;
+    width: 80px;
     margin-top: 50px;
-    margin-left: 900px;
+    margin-left: 950px;
+    text-align: center ;
 }
 
 .next:hover {
@@ -88,4 +106,51 @@ body {
   border-radius: 3px;
   transition: 0.25s;
   margin-top: 400px;
+}
+
+#Date_time{
+  color: black;
+}
+
+#Locations {
+	background: #337ab7;
+  margin: 0px 0px 0px 35px;
+}
+
+#Locations {
+	color: white;
+  margin: 3px;
+}
+
+#Locations:hover{
+    cursor: pointer;
+}
+
+#Locations:hover {
+	color: #fbff00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#Event_members {
+	background: #337ab7;
+  margin: 0px 0px 0px 35px;
+}
+
+#Event_members {
+	color: white;
+  margin: 3px;
+}
+
+#Event_members:hover{
+    cursor: pointer;
+}
+
+#Event_members:hover {
+	color: #fbff00;
+	text-decoration: none;
+	font-weight: bold;
+}
+#test{
+  background: white;
 }
