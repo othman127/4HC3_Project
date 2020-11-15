@@ -1,0 +1,62 @@
+body {
+    background: #1b252e;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: wrap;
+    margin-top: 50px;
+  }
+  
+  .time {
+    font-size: 20px;
+    color: white;
+  
+  }
+  
+  .Event_type {
+    Font-size: 16px;
+    color: white;
+    margin-left: 25px;
+  
+  }
+  
+  #Select_event_header{
+    color: white;
+    margin-left: 25px;
+   
+  
+  }
+  
+  .Event_date {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  
+  }
+  
+  #Select_event_date{
+    padding-left: 50px;
+    color: white;
+  }
+  
+  .date{
+    padding-top: 84px;
+    Font-size: 16px;
+    color: white;
+  }
+  
+  .notif{
+    padding-left: 50px;
+    color: white;
+  
+  }
+  
+  .details{
+    padding-left: 50px;
+    color: white;
+    font-size: 18px;
+  }
+  .submit{
+    margin-left: 350px;
+  }

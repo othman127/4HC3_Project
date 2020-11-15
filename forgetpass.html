@@ -5,7 +5,7 @@
     <title>4HC3-Project</title>
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/pass.css" />
 </head>
 
 <body>
@@ -14,24 +14,20 @@
 	<div class="login">
 		<div class="loginbackground">
 			<div class="loginheader">
-				<h1>Login</h1>
+				<h2>Password Reset</h2>
 			</div>
 
 			<div class="form">
 				<div class="userinfo">
-				<input type="text" value="" placeholder="username" >
-
+				<input type="text" value="" placeholder="Enter your email or username" >
 				</div>
-
-				<div class="userinfo">
-				<input type="password" value="" placeholder="password" >
 		
 				</div>
 
-                <a class="btn" href="/profilepage.html">Login</a>
-                <div>              
+                <a class="btn" href="#" onclick="notif()">Send password reset</a>
+                <div class="cont">              
                     <a class="Password" href="/signup">Sign up!</a>
-                    <a class="Password" href="/forgetpass.html">Forgot your password?</a>
+                    <a class="Password" id="pass" href="/index.html">Already have an account?</a>
                 </div>
   
 			</div>
@@ -41,7 +37,11 @@
 
 </div>
 <script src="js/index.js"></script>
-
+<script>
+    function notif() {
+        alert("password reset has been sent to email")
+}
+</script>
 
 
 

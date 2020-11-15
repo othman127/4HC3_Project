@@ -1,0 +1,82 @@
+
+    body {
+    font-family: Arial;
+    background-color:#1b252e;
+    padding: 50px;
+    }
+    .login {
+    margin: 20px auto;
+    margin-top: 50px;
+    width: 300px;
+    }
+    .loginbackground {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px
+    }
+    
+    .title{
+        color: rgb(128, 128, 128) ;
+        background-color: #FFF;
+        border-radius: 5px;
+        width: 500px;
+        text-align: center;
+        margin-left: 650px;
+    }
+
+    .loginheader {
+        text-align: center;
+        color: rgb(128, 128, 128);
+    }
+    
+    .form {
+        text-align: center;
+    }
+    .userinfo {
+        margin-bottom: 10px;
+    }
+    
+    input {
+        text-align: center;
+        background-color: #ECF0F1;
+        border: 2px solid transparent;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 200;
+        padding: 10px 0;
+        width: 250px;
+        transition: border .5s;
+    }
+    
+    input:focus {
+        border: 2px solid #337ab7;
+        box-shadow: none;
+    }
+    
+    .btn {
+        border: 2px solid transparent;
+        background: #337ab7;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 0;
+        text-decoration: none;
+        text-shadow: none;
+        border-radius: 3px;
+        box-shadow: none;
+        transition: 0.25s;
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .btn:hover {
+        background-color: #337ab7;
+    }
+    
+    .Password {
+        font-size: 14px;
+        color: #444;
+        display: block;
+        margin-top: 12px;
+    }
