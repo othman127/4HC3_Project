@@ -97,7 +97,7 @@
 </div>
 </div>
 <h2 id="intro">Welcome to your profile!</h2>
-<div class="ContainerY">
+<div class="ContainerY" id="contY">
 	<div class="bio">
 		<h1>Bio</h1>
 		<form>
@@ -112,12 +112,12 @@
 		   <div class="ContainerX">
 		   <a id="friends" href="FindPeople.html">0 Friends</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;
 		   <a id="Events" href="ViewHistory.html">0 Events</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		   <p id="game_genre">6 Liked Game genre</p>
+		   <p id="game_genre" onclick="hide()">6 Liked Game genre</p>
 		   </div>
 	   
 
 		   </div>
-		   <div class= "status">
+		   <div class= "status" id="status">
 			<h1 id="status_header">Status:</h1>
 			<div class = "status_image">
 				<img src="src/img/dota.jpg" id="dota">
@@ -130,14 +130,14 @@
 			   <h3 id="date2">9/13/2020</h3>
 			</div>
 
-		<div class = "lastseen" >
-			<h2 id="seen"> Last seen: 11/10/2020</h2> 
-			<label id="toggle"> Toggle on
-				<input type="checkbox" checked="checked">
+		<div class = "lastseen" id="lastseen">
+			<h2 id="seen"> Last seen: 11/17/2020</h2> 
+			<label id="toggle" onclick="change()"> Toggle on
+				<input type="checkbox" checked="checked" id="checkbox1">
 			</label>
 			<h2 id ="event"> Last event: dota 2 queue up</h2>
-			<label id="toggle1"> Toggle on
-				<input type="checkbox" checked="checked">
+			<label id="toggle1" onclick="change2()"> Toggle on
+				<input type="checkbox" checked="true" id="checkbox2">
 			</label>    
 
 
@@ -151,3 +151,32 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/FindPeople.js"></script>
+<script>
+	function change(){
+		var x = document.getElementById("checkbox1").checked;
+		if(x == true){
+			document.getElementById("seen").innerHTML ="Last seen: 11/17/2020";
+		}
+		else
+		{
+		 	document.getElementById("seen").innerHTML = "Last seen: Unavailable";
+		 }
+	}
+
+	function change2(){
+		var x = document.getElementById("checkbox2").checked;
+		if(x == true){
+			document.getElementById("event").innerHTML ="Last event: dota 2 tournament";
+		}
+		else
+		{
+		 	document.getElementById("event").innerHTML = "Last event: Unavailable";
+		 }
+	}
+
+	function hide(){
+		document.getElementById("contY").style.display = "none";
+		document.getElementById("status").style.display = "none";
+		document.getElementById("lastseen").style.display = "none";
+	}
+</script>
