@@ -1,4 +1,16 @@
-commit c8085c314b2728253bee5766a45a364604a17b07 (HEAD -> main, origin/main, origin/HEAD)
+commit 6945f7df4f78b0bca2bf667b5aae8cfe3b46bb87 (HEAD -> main, origin/main, origin/HEAD)
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 06:59:58 2020 +0400
+
+    Update Work.txt
+
+commit 12a02ed46a82f1619560432e9c7b89189548af50
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 06:55:04 2020 +0400
+
+    Create log.txt
+
+commit c8085c314b2728253bee5766a45a364604a17b07
 Author: mullico <mullico@mcmaster.ca>
 Date:   Tue Nov 17 06:36:53 2020 +0400
 
