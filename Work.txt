@@ -1,2 +1,7 @@
-Othman - Create Events/profile page/landing page
+Othman - Create Events/profile page/landing page/settings/view history - full design and interactivity
+       - nav bar linking(pages)
 Jordan - Find People page - full design and interactivity
+        -Calender - full design and interactivity
+        -Nav bar full design and interactivity
+Hahd   - Messaging - design and interactivity
+       - Find Events - design and interactivity
