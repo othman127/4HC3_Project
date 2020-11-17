@@ -4,6 +4,10 @@ h2 {
     margin-left: 20px;
   }
 
+  textarea{
+      width: 250px;
+  }
+
   body {
     background: #1b252e;
   }
@@ -56,6 +60,7 @@ h2 {
 
 
 
+
   .user_name{
     margin-left:520px;
     color: white;
@@ -93,6 +98,7 @@ h2 {
 
 #intro{
     color: white;
+    margin-right: 40px;
 }
 
 .bio{
@@ -116,6 +122,7 @@ h2 {
 #dota{
     height: 100px;
     width: 100px;
+    margin-left: 30px;
     border-radius: 50%;
 }
 #valorant{
@@ -129,21 +136,22 @@ h2 {
     flex-direction: row;
 }
 .status{
-    margin-left: 50px;
+    margin-left: 20px;
     color: white;
 }
 
 #date1{
-    margin-left: 125px;
+    margin-left: 70px;
 }
 
 #date2{
-    margin-left: 135px;
+    margin-left: 80px;
 }
 
 .lastseen{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 #event{
