@@ -1,0 +1,252 @@
+commit c8085c314b2728253bee5766a45a364604a17b07 (HEAD -> main, origin/main, origin/HEAD)
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 06:36:53 2020 +0400
+
+    polish!
+
+commit 3890b7ed97ca86a2abba88a55f01804a1b671ef3
+Merge: 2edc102 4122c38
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 06:03:40 2020 +0400
+
+    Merge branch 'main' of https://github.com/othman127/4HC3_Project into main
+
+commit 2edc1026d71d8f7ff8009bcb57291767e35cd64e
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 06:03:34 2020 +0400
+
+    profille page css
+
+commit 4122c38bc92bca95c98fca8e9c2412b7940ec62b
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Mon Nov 16 20:49:29 2020 -0500
+
+    Changed modal subheading to black text instead of white
+
+commit 6abfde45c5f86e20de470b87e374bc46a5f00461
+Merge: b18688d 9029e41
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 05:43:45 2020 +0400
+
+    Merge branch 'main' of https://github.com/othman127/4HC3_Project into main
+
+commit b18688dfa98de1f8009351f1cfa8a29e3551200a
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 05:43:28 2020 +0400
+
+    all js for profile page
+
+    minor css and href changes for rest of the files
+
+commit 9029e41f9dfc24692759deab65e8c1869343175d
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Mon Nov 16 20:42:59 2020 -0500
+
+    Fixed typo
+
+commit cf47c502a2e9c14887ba8eda8ac510617673e8d7
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Mon Nov 16 17:28:45 2020 -0500
+
+    Month buttons no longer move
+
+commit 451a0679bf4e6f849f375e1fa03c055e0368fbf3
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Mon Nov 16 17:17:24 2020 -0500
+
+    Events now appear on calendar
+
+commit 9e2c5469d2d356baea07140d02676b571716bc3f
+Author: mullico <mullico@mcmaster.ca>
+Date:   Tue Nov 17 01:41:19 2020 +0400
+
+    Update profilepage.html
+
+commit 11dcf24d82c65d347dda84360bb09d3622207104
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Mon Nov 16 16:30:39 2020 -0500
+
+    Calendar can now change months
+
+commit 0892ff19db9b07d68fa43709d24443b88f655f99
+Author: mullico <mullico@mcmaster.ca>
+Date:   Mon Nov 16 08:12:09 2020 +0400
+
+    settings update/ messaging skeleton
+
+commit 9f96d5ba6a831a16f8615911256a6274887abc5b
+Author: mullico <mullico@mcmaster.ca>
+Date:   Mon Nov 16 03:10:44 2020 +0400
+
+    Settings
+
+commit f21b399f6f9d68da61f1cb39f1d83077d751bbb6
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sun Nov 15 18:02:53 2020 -0500
+
+    Textboxes replaced with searchable dropdowns. Search results now depend on search terms. Game tab deletion works
+
+commit 53476e5901dc2046fb93864836c05af83d6bf90a
+Author: mullico <mullico@mcmaster.ca>
+Date:   Mon Nov 16 00:27:35 2020 +0400
+
+    quick settings
+
+commit ff13dcfcd7d03fa172b1930a2183367ebfcb68a7
+Author: mullico <mullico@mcmaster.ca>
+Date:   Mon Nov 16 00:01:36 2020 +0400
+
+    profile page
+
+commit 02d564d8233fb5b3ded69e4810910c6c39f1560e
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 23:01:48 2020 +0400
+
+    js for creating events
+
+commit 78600c4706e8d22ce89f08eefe4cf1a033271de7
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 20:07:01 2020 +0400
+
+    update Create Events/shell for rest
+
+commit 9706ed27fa54c44a45539799a0a3873a395d0b74
+Merge: f5115f5 c738da9
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 19:05:15 2020 +0400
+
+    Merge branch 'main' of https://github.com/othman127/4HC3_Project into main
+
+commit f5115f5369932f6ed3ddffaa6643e6f3b6af9696
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 19:04:56 2020 +0400
+
+    adding remaining "Tasks"
+
+    skeleton of tasks.
+
+commit c738da9ec25148f40fc93780395ffef0dc61642c
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sun Nov 15 10:03:07 2020 -0500
+
+    Removed unneeded comments
+
+commit 6197620fee8d9473914a2e94351a6b584b2d46c5
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 18:44:39 2020 +0400
+
+    find people nav bar
+
+    added icons to the nav bar as per design document suggestion
+
+commit 14e4622200fe0a1b1769491218b20a2e6d8cdfc6
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 09:42:45 2020 +0400
+
+    filling in random tasks
+
+    CSS of create event
+
+commit 584898003a9450e0b31348fde5f277174003786a
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 08:37:09 2020 +0400
+
+    Creating events
+
+    addding Css
+
+commit f6d34f91309c795b30598ae89964ee00c90a3139
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sun Nov 15 07:53:43 2020 +0400
+
+    login/create events/profile page
+
+commit a5d7480edc2d599a496bfc6def98dfea8a8f15bd
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 19:27:29 2020 -0500
+
+    Removed FindPeople2.html and FindPeople3.html
+
+commit 87c8faa734af0085af894d5ab6632ea82e6fc3c2
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 18:33:15 2020 -0500
+
+    Minor changes
+
+commit acf152ba0082a4711b7a92bdae94368ac0333862
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 17:53:52 2020 -0500
+
+    Added search results and Add Friend
+
+commit d3cad7a51cb25c2004d0e6b877f649dc2f633848
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 15:13:28 2020 -0500
+
+    Fixed rank issue
+
+commit cee5d298d7c82ef6c43ab951a4011b11ac6d62fb
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 13:35:51 2020 -0500
+
+    Added ranks for games without ranking systems
+
+commit c4a9824cf4a96515029f57f1a88e768f8af6a8c0
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 12:09:52 2020 -0500
+
+    Changed casComp label for h3
+
+commit 9bfb74bb9a3e4db79dc165436dd6ee86a9083ca7
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 12:02:45 2020 -0500
+
+    Centered ranks. Ranks now work for csgo and valorant
+
+commit 9c179329c7a5a5b0103f924e000f8109861318ef
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Sat Nov 14 02:06:32 2020 -0500
+
+    'Add Games' tabs now work. Rank dropdown works
+
+commit e15061bfeb09bff4efb5a48b5a84cd495618c64c
+Author: Jordan Levy <jordaneblevy@gmail.com>
+Date:   Fri Nov 13 14:19:09 2020 -0500
+
+    Added FindPeople. More settings toggle works
+
+commit 2d2d6805f2a9c494e7eefc0ddef42829eeab287d
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sat Nov 7 00:25:27 2020 +0400
+
+    skeleton completed
+
+    gave description for css and js
+
+commit 865c6ff755ce062a750f225e79c61bf123238211
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sat Nov 7 00:15:31 2020 +0400
+
+    adding css/js folders
+
+    skeleton bois
+
+commit 62bb09f4a5087819e598c7d4de513fb36dc4eb55
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sat Nov 7 00:12:46 2020 +0400
+
+    Update index.html
+
+    skeleton boi
+
+commit 942ccd9a725081545914eea1bf632f820bc0f229
+Author: mullico <mullico@mcmaster.ca>
+Date:   Sat Nov 7 00:07:29 2020 +0400
+
+    Create index.html
+
+commit b66e56c593b8e4eba607a0f93760d6d4eff30c10
+Author: othman127 <46832754+othman127@users.noreply.github.com>
+Date:   Fri Nov 6 23:41:40 2020 +0400
+
+    Initial commit
