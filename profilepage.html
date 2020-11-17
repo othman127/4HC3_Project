@@ -56,7 +56,7 @@
 										<br/>
 										<a class="dropdown-item" href="CreateEvent.html">Create Event</a>
 										<br/>
-										<a class="dropdown-item">View Calendar</a>
+										<a class="dropdown-item" href="Calendar.html">View Calendar</a>
 										<br/>
 										<a class="dropdown-item">View Maps</a>
 										<br/>
@@ -105,14 +105,23 @@
 			<br>
 		</form>
 		</div>
-		<div class = "image">
-			<img src="src/img/bruh.jpg" class = "Profile_pic">
-		   </div>
+		<div class="contyboi">
+			<img src="src/img/bruh.jpg" class = "image" id="profile_pic">
+			<br>
+			<div class="uploadimg">
+			<label>Upload a picture</label id="lab1">
+		   <input type="file" accept="image/*" id="newpp" >
+		   <input type="submit" value="Upload" onclick="upload()" id="submit">
+		</div>
+		</div>
+
+		
+
 		   <h1 class = "user_name">John Doe</h1>
 		   <div class="ContainerX">
 		   <a id="friends" href="FindPeople.html">0 Friends</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;
 		   <a id="Events" href="ViewHistory.html">0 Events</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		   <p id="game_genre" onclick="hide()">6 Liked Game genre</p>
+		   <p id="game_genre" onclick="hide()">6 Liked Games</p>
 		   </div>
 	   
 
@@ -140,43 +149,37 @@
 				<input type="checkbox" checked="true" id="checkbox2">
 			</label>    
 
-
-
 		</div>
 
+	
+
 </div>
+<div id="like_games">
+	<h2 id="like_title">Liked Games:    </h2>
+	<p id="like_desc">Check the box below the icon to like the game</p>
+	<div class = "Liked_image">
+		<img src="src/amongus.png" id="liked_among">
+		<img src="src/csgo.png" id= "liked_csgo">
+		<img src="src/dota.png" id="liked_dota" >
+		<img src="src/lol.png" id="liked_lol" >
+		<img src="src/minecraft.png" id="liked_mine" >
+		<img src="src/valorant.png" id="liked_valo" >
+	</div>
+	<div id="like_check">
+	<input type="checkbox" checked="checked" onclick="changeboi(); testboi()" id="check_among">
+	<input type="checkbox" checked="checked"  onclick="changeboi()" id="check_csgo">
+	<input type="checkbox" checked="checked"  onclick="changeboi()" id="check_dota">
+	<input type="checkbox" checked="checked"  onclick="changeboi()" id="check_lol">
+	<input type="checkbox" checked="checked"  onclick="changeboi()" id="check_mine">
+	<input type="checkbox" checked="checked"  onclick="changeboi()" id="check_valo">
+	</div>
+	
+	<p id="link_to_profile" href="profilepage.html" onclick="returnprofile()">Click here to return to profile and complete changes</p>
+	</div>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/FindPeople.js"></script>
-<script>
-	function change(){
-		var x = document.getElementById("checkbox1").checked;
-		if(x == true){
-			document.getElementById("seen").innerHTML ="Last seen: 11/17/2020";
-		}
-		else
-		{
-		 	document.getElementById("seen").innerHTML = "Last seen: Unavailable";
-		 }
-	}
-
-	function change2(){
-		var x = document.getElementById("checkbox2").checked;
-		if(x == true){
-			document.getElementById("event").innerHTML ="Last event: dota 2 tournament";
-		}
-		else
-		{
-		 	document.getElementById("event").innerHTML = "Last event: Unavailable";
-		 }
-	}
-
-	function hide(){
-		document.getElementById("contY").style.display = "none";
-		document.getElementById("status").style.display = "none";
-		document.getElementById("lastseen").style.display = "none";
-	}
-</script>
+	<script src="js/FindPeople.js"></script>
+	<script src="js/ProfilePage.js"></script>

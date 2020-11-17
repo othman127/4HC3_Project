@@ -15,6 +15,7 @@ h2 {
   }
 
   .image {
+      
       margin-left:520px;
       height: 150px;
       width:150px;
@@ -22,6 +23,38 @@ h2 {
     overflow: hidden;
     border-radius: 50%;
   }
+
+.uploadimg{
+    color: white;
+    margin-left: 330px;
+    margin-top:50px;
+    
+}
+
+#lab1{
+    font-size: ;
+}
+.contyboi{
+    display: flex;
+    flex-direction: row;
+}
+
+#submit{
+    color: #ffffff;
+    border: 2px solid transparent;
+    background: #337ab7;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 3px;
+    transition: 0.25s;
+    width: 90px;
+}
+#submit:hover {
+    background-color: #337ab7;
+}
+
+
 
   .user_name{
     margin-left:520px;
@@ -124,4 +157,104 @@ h2 {
 #toggle1{
     margin-top: 40px;
     margin-left:20px;
+}
+
+.Liked_image{
+    display:flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+#liked_among{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left:550px;
+}
+#liked_csgo{
+    height: 100px;
+    width: 100px;
+    border-radius: 30%;
+    margin-left:50px;
+}
+#liked_dota{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left:50px;
+}
+#liked_lol{
+    height: 100px;
+    width: 100px;
+    margin-left:50px;
+ 
+}
+#liked_mine{
+    height: 100px;
+    width: 100px;
+    margin-left:30px;
+    
+}
+#liked_valo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left:50px;
+}
+
+#like_title{
+    margin-top: 50px;
+    text-align: center;
+}
+#like_desc{
+    margin-top: 10px;
+    text-align: center;
+}
+#like_check{
+    margin-top: 10px;
+}
+
+
+#check_among{
+    margin-left:580px;
+}
+#check_csgo{
+    margin-left:150px;
+}
+#check_dota{
+    margin-left:130px;
+}
+#check_lol{
+    margin-left:130px;
+}
+#check_mine{
+    margin-left:115px;
+}
+#check_valo{
+    margin-left:130px;
+}
+
+#link_to_profile{
+    margin-top: 100px;
+    text-align: center;
+    border: 2px solid transparent;
+    background: #337ab7;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    width: 250px;
+    border-radius: 3px;
+    transition: 0.25s;
+    margin-left: 840px;
+   
+}
+
+#link_to_profile:hover {
+    text-decoration: underline;
+    color: #1b252e;
+}
+
+#like_games{
+    display: none;
 }
