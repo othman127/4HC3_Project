@@ -15,6 +15,10 @@
     border-radius: 5px
     }
     
+    .testyboi{
+        display:flex;
+        flex-direction: row;
+    }
     .title{
         color: rgb(128, 128, 128) ;
         background-color: #FFF;
@@ -24,6 +28,43 @@
         margin-left: 650px;
     }
 
+    #dota{
+        width:200px;
+        height:200px;
+        transform: rotate(20deg);
+        border-radius: 50%;
+    }
+    #among{
+        width:200px;
+        height:200px;
+        transform: rotate(20deg);
+        border-radius: 50%;
+    }
+    #csgo{
+        width:200px;
+        height:200px;
+        transform: rotate(-20deg);
+        border-radius: 50%;
+        margin-left: 600px;
+    }
+    #mine{
+        width:200px;
+        height:200px;
+
+        margin-left: 590px;
+    }
+    #games{
+        width:200px;
+        height:200px;
+        margin-left: 790px;
+        border-radius: 50%;
+    }
+    #valo{
+        width:200px;
+        height:200px;
+        transform: rotate(-20deg);
+        border-radius: 50%;
+    }
     .loginheader {
         text-align: center;
         color: rgb(128, 128, 128);

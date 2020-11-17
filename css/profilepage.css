@@ -84,6 +84,21 @@ h2 {
       color: white;
   }
 
+  #friends:hover{
+   color: #337ab7;
+   
+}
+#Events:hover{
+    color: #337ab7;
+    
+ }
+
+ #game_genre:hover{
+    color: #337ab7;
+    
+ }
+ 
+
   #Events{
     text-decoration: underline;
     font-size: 22px;
