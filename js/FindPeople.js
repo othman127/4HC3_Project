@@ -632,7 +632,7 @@ function refreshActiveTabContents() {
 }
 
 function openAddFriendModal(name){
-	if(confirm(`Send friend request to ${name}`)){
+	if(confirm(`Send friend request to ${name}?`)){
 		showAlert();
 	} else {
 	}
